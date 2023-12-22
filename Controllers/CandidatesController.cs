@@ -10,39 +10,7 @@ namespace JeavioTestCandidate.Controllers
     [Produces("application/json")]
     [ApiController]
     public class CandidatesController : ControllerBase
-    {
-        private static List<Candidate> candidates = new List<Candidate>()
-        {
-            new Candidate()
-            {
-                id = Guid.NewGuid(),
-                name = "Jimmy coder",
-                skills = new List<string>
-                {
-                    "javascript", "es6", "nodejs", "express"
-                }
-            },
-            new Candidate()
-            {
-                id = Guid.NewGuid(),
-                name = "TG coder",
-                skills = new List<string>
-                {
-                    "javascript", "express", "angular"
-                }
-            },
-            new Candidate()
-            {
-                id = Guid.NewGuid(),
-                name = "DG coder",
-                skills = new List<string>
-                {
-                    "javascript", "express", "angular"
-                }
-            }
-        };
-
-
+    {        
         private readonly CandidateRepository _candidateRepository;
         public CandidatesController()
         {
